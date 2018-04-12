@@ -148,6 +148,10 @@ Now, run the `pwd` command again
 
 You can see how the folder path now includes the `testfolder `folder. 
 
+### What is Python?
+
+Python is a programming language.
+
 ### What is the Python Shell?
 
 The Python shell is an interactive interface for writing python code and executing it a line at a time. You will typically use it for learning purposes or perhaps to troubleshoot some code.
@@ -177,4 +181,7 @@ What is Source code...?
 ### Brew
 
 Homebrew is a free and open-source software package management system that makes it easy to install software on macOS. [https://brew.sh/](https://brew.sh/)
+
+**Next Up:   
+**Setting up your computer for coding
 

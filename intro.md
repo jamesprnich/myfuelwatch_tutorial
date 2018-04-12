@@ -19,3 +19,6 @@ This tutorial was written using:
 * Mithril v1.x?
 * Postgres v9.6.6?
 
+**Next Up:   
+**The basics
+

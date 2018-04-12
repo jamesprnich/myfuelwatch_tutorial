@@ -39,7 +39,7 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 % python fuelwatch_tutorial.py
 ```
@@ -49,7 +49,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 # of URLs to process: 2
 ['http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=11&Region=2', 'http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=4&Region=2']

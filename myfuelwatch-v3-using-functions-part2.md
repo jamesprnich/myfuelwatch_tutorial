@@ -70,7 +70,7 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 % python fuelwatch_tutorial.py
 ```
@@ -80,7 +80,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 # of URLs to process: 2
 Dict Sorted: [{'Price': '149.9', 'Location': 'BROOME', 'Address': '49 Reid Rd', 'Phone': '(08) 9192 8181', 'Brand': 'United', 'Date': '2018-04-04'}, {'Price': '153.9', 'Location': 'BROOME', 'Address': 'Broome Boulevard Shopping Centre', 'Phone': '(08) 9192 7909', 'Brand': 'Caltex Woolworths', 'Date': '2018-04-04'}, {'Price': '153.9', 'Location': 'BROOME', 'Address': 'Cnr Hamersley St & Napier Tce', 'Phone': '(08) 9192 1702', 'Brand': 'Coles Express', 'Date': '2018-04-04'}, {'Price': '155.9', 'Location': 'BROOME', 'Address': 'Lot 345 Mavis St', 'Phone': '(08) 9192 1574', 'Brand': 'Caltex', 'Date': '2018-04-04'}, {'Price': '158.5', 'Location': 'BROOME', 'Address': '1 Guy St', 'Phone': '(08) 9193 7833', 'Brand': 'BP', 'Date': '2018-04-04'}, {'Price': '159.9', 'Location': 'BROOME', 'Address': 'Cnr Frederick St & Coghlan St', 'Phone': '(08) 9193 5517', 'Brand': 'BP', 'Date': '2018-04-04'}]

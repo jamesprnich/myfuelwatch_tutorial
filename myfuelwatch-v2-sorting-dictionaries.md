@@ -60,7 +60,7 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 % python fuelwatch_tutorial.py
 ```
@@ -70,7 +70,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 List Sorted: [127.5, 139.9, 146.9, 146.9, 146.9, 146.9, 146.9, 146.9, 149.9, 149.9]
 List Sorted (reversed): [149.9, 149.9, 146.9, 146.9, 146.9, 146.9, 146.9, 146.9, 139.9, 127.5]

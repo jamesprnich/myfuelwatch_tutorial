@@ -24,5 +24,6 @@ Initially we are creating a Python script that will take fuel price information 
 
 * TBA
 
-
+**Next Up:   
+**We look at the Fuelwatch [API](the-basics.md#api)
 

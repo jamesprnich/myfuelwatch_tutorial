@@ -1,3 +1,7 @@
+---
+description: sfdsfdsdsf
+---
+
 # myFuelwatch v1 - Connect to the API and get fuel price data
 
 In this section we add the following functionality:
@@ -36,7 +40,7 @@ print(fuelprice_data.content)
 {% endcode-tabs %}
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 (myfuelwatch_venv)% 
 ```
@@ -46,7 +50,7 @@ print(fuelprice_data.content)
 * Install requests using PIP
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 (myfuelwatch_venv)% pip install requests
 ```
@@ -54,7 +58,7 @@ print(fuelprice_data.content)
 {% endcode-tabs %}
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 Collecting requests
   Using cached requests-2.18.4-py2.py3-none-any.whl
@@ -79,7 +83,7 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 % python fuelwatch_tutorial.py
 ```
@@ -89,7 +93,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 b'<?xml version="1.0" encoding="UTF-8"?>\r\n<rss version="2.0"><channel><title>FuelWatch Prices For Cloverdale</title><ttl>720</ttl><link>http://www.fuelwatch.wa.gov.au</link><description>27/03/2018 - Cloverdale</description><language>en-us</language><copyright>Copyright 2005 FuelWatch. All Rights Reserved.</copyright><lastBuildDate>Tue Mar 27 15:40:57 WST 2018Tu
 ```
@@ -102,7 +106,7 @@ You can see above an small part of what was returned. This contains the fuel pri
 
 1. Import the `requests` module so we can use it to connect to the Fuelwatch API
 2. Specify the URL we want to use for the Fuelwatch API and assign it to a variable `api_url = "http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=1&Suburb=Cloverdale"`
-3. Get the fuel price data from the Fuelwatch API: `fuelprice_data = requests.get(api_url)`
+3. Get the fuel price data returned from the Fuelwatch API: `fuelprice_data = requests.get(api_url)`
 4. Print the data returned by the Fuelwatch API:`print(fuelprice_data.content)`
 
 **Next Up:   
