@@ -1,4 +1,4 @@
-# Introduction
+# Intro
 
 > **This tutorial is written for computers running MacOS.**
 

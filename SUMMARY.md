@@ -1,7 +1,7 @@
 # Table of contents
 
 * Initial page
-* [Introduction](untitled.md)
+* [Intro](intro.md)
 * [The Basics](untitled-1.md)
 * [Setup your computer](setup-your-computer.md)
 * [Write your first python code](untitled-2.md)
