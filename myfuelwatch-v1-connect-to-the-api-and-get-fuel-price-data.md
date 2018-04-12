@@ -6,9 +6,13 @@ In this section we add the following functionality:
 * get the returned fuel data
 * print the fuel data 
 
-**How does this help us?** It gets us the fuel data we need, which is the foundation of our product.
+**How does this help us?** It gets us the fuel data we want, which is the foundation of our app.
 
-### **1. Modify your python code**
+### **1. Create a python file & write some python code**
+
+Because we haven't yet written any code we have to first create a file called `fuelwatch_tutorial.py` 
+
+Now enter the code shown below.
 
 {% code-tabs %}
 {% code-tabs-item title="fuelwatch\_tutorial.py" %}
