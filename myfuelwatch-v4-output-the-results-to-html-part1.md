@@ -85,7 +85,7 @@ def gen_fuelwatch_urls(fueltypes, regions):
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-> NOTE: Both the [_**itertools.product**_](python-itertools.product.md) and [_**.format\(\*i\)**_](using-.format.md) are explained in detail in previous sections of this tutorial.
+> NOTE: Both the [_**itertools.product**_](python-itertools.product.md) and [_**.format\(\*i\)**_](python-.format.md) are explained in detail in previous sections of this tutorial.
 
 This is a function which returns a list of Fuelwatch API URLs. 
 

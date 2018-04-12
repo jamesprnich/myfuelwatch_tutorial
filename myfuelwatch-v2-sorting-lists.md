@@ -1,7 +1,3 @@
----
-description: Sorting python lists
----
-
 # myFuelwatch v2 - Sorting lists
 
 In this section we add the following functionality:
