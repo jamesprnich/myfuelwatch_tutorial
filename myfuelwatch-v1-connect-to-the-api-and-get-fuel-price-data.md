@@ -1,7 +1,3 @@
----
-description: sfdsfdsdsf
----
-
 # myFuelwatch v1 - Connect to the API and get fuel price data
 
 In this section we add the following functionality:

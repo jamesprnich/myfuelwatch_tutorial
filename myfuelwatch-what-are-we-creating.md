@@ -1,6 +1,6 @@
 # myFuelwatch - What are we creating?
 
-Initially we are creating a Python script that will take fuel price information from the [Fuelwatch](https://www.fuelwatch.wa.gov.au) website, manipulate it \(sort, filter etc\)and then display the results as a webpage \(html file\). We will progressively improve each version with more features and ultimately make a web application.
+Initially we are creating a Python script that will take fuel price information from the [Fuelwatch](https://www.fuelwatch.wa.gov.au) website, manipulate it \(sort, filter etc\) and then display the results as a webpage \(html file\). We will progressively improve each version with more features and ultimately make a web application.
 
 ### myFuelwatch v1
 
