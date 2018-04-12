@@ -29,24 +29,7 @@ print(fuelprice_data.content)
 
 ### 2. Install the `requests` module using PIP
 
-* Load a terminal window and activate the myFuelwatch virtual environment.
-
-{% code-tabs %}
-{% code-tabs-item title="Terminal" %}
-```text
-% source bin/activate
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-{% code-tabs %}
-{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
-```text
-(myfuelwatch_venv)% 
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
+* Load a terminal window and [activate](myfuelwatch-virtual-environment.md#2.-activate-the-virtualenv) the myFuelwatch virtual environment \(or continue in the same Terminal window if you already have it open from the previous step\)
 * Install requests using PIP
 
 {% code-tabs %}
@@ -85,7 +68,7 @@ Now we are ready to execute the code and see what happens.
 {% code-tabs %}
 {% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
-% python fuelwatch_tutorial.py
+(myfuelwatch_venv)% python fuelwatch_tutorial.py
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}

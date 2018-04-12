@@ -41,7 +41,7 @@ Now we are ready to execute the code and see what happens.
 {% code-tabs %}
 {% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
-% python fuelwatch_tutorial.py
+(myfuelwatch_venv)% python fuelwatch_tutorial.py
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
