@@ -61,7 +61,7 @@ reports_folder
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-> NOTE: The output above will be different. This is example output only.
+> NOTE: The output above will be different on your computer. This is example output only.
 
 * **Create folders on your computer**
 * **Change folders on your computer**
