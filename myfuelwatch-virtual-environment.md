@@ -1,69 +1,65 @@
 # myFuelwatch - Virtual Environment
 
-Here we are going to create a virtual environment on your computer that will be used when creating your myFuelwatch app.
+Here we are going to create a [virtual environment](the-basics.md#virtual-environments) on your computer that will be used when creating your myFuelwatch app.
 
-**create virtualenv**
+### 1. C**reate virtualenv**
 
-update pip
-
-#### Install dependencies using PIP
-
-We will use other software to make it quick and easy for us to complete certain tasks.
-
-* We use a python module called '`requests`' to connect to the FuelWatch API.
-* We use a python module called '`lxml`' to parse/read the XML file that the FuelWatch API sends to us.
-
-Terminal:
+In the folder you wish to create the virtual environment, run the command below
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \[virtual environment\]" %}
+{% code-tabs-item title="Terminal " %}
 ```text
-%(venv) pip install requests
+JP-MacBook-Pro% virtualenv -p python3 myfuelwatch_venv
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Result/Output:
+> NOTE: For the remainder of this tutorial the computer name is not included in the examples for simplicity. In the above example the computer name is `JP-MacBook-Pro` . On your computer it will be whatever your computers name is.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \[virtual environment\] \(output\)" %}
+{% code-tabs-item title="Terminal \(output\)" %}
 ```text
-Collecting requests
-  Using cached requests-2.18.4-py2.py3-none-any.whl
-Collecting idna<2.7,>=2.5 (from requests)
-  Using cached idna-2.6-py2.py3-none-any.whl
-Collecting certifi>=2017.4.17 (from requests)
-  Using cached certifi-2018.1.18-py2.py3-none-any.whl
-Collecting chardet<3.1.0,>=3.0.2 (from requests)
-  Using cached chardet-3.0.4-py2.py3-none-any.whl
-Collecting urllib3<1.23,>=1.21.1 (from requests)
-  Using cached urllib3-1.22-py2.py3-none-any.whl
-Installing collected packages: idna, certifi, chardet, urllib3, requests
-Successfully installed certifi-2018.1.18 chardet-3.0.4 idna-2.6 requests-2.18.4 urllib3-1.22
+Running virtualenv with interpreter /usr/local/bin/python3
+Using base prefix '/usr/local/Cellar/python/3.6.4_4/Frameworks/Python.framework/Versions/3.6'
+New python executable in /Users/james/webdev/myfuelwatch_venv/bin/python3.6
+Also creating executable in /Users/james/webdev/myfuelwatch_venv/bin/python
+Installing setuptools, pip, wheel...done.
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Terminal:
+### 2. Activate the virtualenv 
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \[virtual environment\]" %}
+{% code-tabs-item title="Terminal" %}
 ```text
-%(venv) pip install lxml
+% source myfuelwatch_venv/bin/activate
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Result/Output:
+Notice, how the prompt within the Terminal changes and now has `(myfuelwatch_venv)` in front of the `%`
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \[virtual environment\] \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
-  Downloading lxml-4.2.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (8.7MB)
-    100% |████████████████████████████████| 8.7MB 101kB/s 
-Installing collected packages: lxml
-Successfully installed lxml-4.2.1
+(myfuelwatch_venv)% 
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+### 3. Upgrade pip
+
+We want to make sure you are running the latest version of pip, so we run a command to upgrade it.
+
+{% code-tabs %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
+```text
+(myfuelwatch_venv)% pip install --upgrade pip
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+**Next Up:   
+**Connect to the Fuelwatch API and display the raw data it gives us.
 

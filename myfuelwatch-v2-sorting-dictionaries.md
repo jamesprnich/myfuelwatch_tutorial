@@ -60,9 +60,9 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
-% python fuelwatch_tutorial.py
+(myfuelwatch_venv)% python fuelwatch_tutorial.py
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -70,7 +70,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 List Sorted: [127.5, 139.9, 146.9, 146.9, 146.9, 146.9, 146.9, 146.9, 149.9, 149.9]
 List Sorted (reversed): [149.9, 149.9, 146.9, 146.9, 146.9, 146.9, 146.9, 146.9, 139.9, 127.5]
@@ -102,10 +102,11 @@ for each_item in root.channel.item:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-1. Create an empty list variable to store the dictionaries we are about to create`list_of_dicts = []`
-2. Loop through the `root` object: `for each_item in root.channel.item:`
-3. Create a dictionary for each bit of fuel data
-4. Append each dictionary to the list variable: `list_of_dicts.append(dict_data)`
+1. We create an empty list variable `list_of_dicts = []` to store the dictionaries we are about to create
+2. We loop through the objectify object `root` `for each_item in root.channel.item:`
+3. Create a dictionary for each bit of fuel data. Each dictionary created will look similar to `{'Price': 131.9, 'Location': '12 Streetname Rd', ....etc }`
+4. Append each dictionary to the list variable: `list_of_dicts.append(dict_data)` . 
+5. We end up with object that contains a list of dictionaries looking similar to `[{'Price': 131.9, 'Location': '12 Streetname Rd', ....etc},{'Price': 127.8, 'Location': '12 Different St', ....etc},{'Price': 133.3, 'Location': '56 Other Rd', ....etc}]`
 
 {% code-tabs %}
 {% code-tabs-item title="Excerpt from fuelwatch.tutorial.py" %}

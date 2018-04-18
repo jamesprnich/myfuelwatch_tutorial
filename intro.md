@@ -1,6 +1,9 @@
-# Introduction
+# Intro
 
-> **This tutorial is written for computers running MacOS.**
+> **This tutorial is written for:**
+>
+> * beginners who have never written code before
+> * computers running MacOS
 
 This tutorial takes you through the steps to make a product called "myFuelwatch" which is essentially a web application that lets you view the cheapest fuel prices around you. Throughout its creation you will create many versions of "myFuelwatch", each with progressively more features. Once fully completed the myFuelwatch product is a Single Page Application \(SPA\) that utilises the following technologies:
 
@@ -18,4 +21,7 @@ This tutorial was written using:
 * Django 2.0x?
 * Mithril v1.x?
 * Postgres v9.6.6?
+
+**Next Up:   
+**The basics
 

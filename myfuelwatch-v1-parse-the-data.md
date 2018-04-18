@@ -26,28 +26,11 @@ for each_item in root.channel.item:
 
 ### 2. Install the `lxml` module using PIP
 
-* Load a terminal window and activate the myFuelwatch virtual environment.
-
-{% code-tabs %}
-{% code-tabs-item title="Terminal" %}
-```text
-% source bin/activate
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-{% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
-```text
-(myfuelwatch_venv)% 
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
+* Load a terminal window and [activate](myfuelwatch-virtual-environment.md#2.-activate-the-virtualenv) the myFuelwatch virtual environment \(or continue in the same Terminal window if you already have it open from the previous step\)
 * Install lxml using PIP
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 (myfuelwatch_venv)% pip install lxml
 ```
@@ -55,7 +38,7 @@ for each_item in root.channel.item:
 {% endcode-tabs %}
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
   Downloading lxml-4.2.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (8.7MB)
     100% |████████████████████████████████| 8.7MB 101kB/s 
@@ -72,9 +55,9 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
-% python fuelwatch_tutorial.py
+(myfuelwatch_venv)% python fuelwatch_tutorial.py
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -82,7 +65,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 124.7: United Kewdale
 139.9: BP Redcliffe

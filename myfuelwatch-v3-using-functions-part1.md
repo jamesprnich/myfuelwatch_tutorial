@@ -1,10 +1,10 @@
-# myFuelwatch v4 - Output the results to html \(part1\)
+# myFuelwatch v3 - Using functions \(part1\)
 
 In this section we add the following functionality:
 
-* save the fuel data to a html file
+* ability to specify multiple fuel types and regions and generate the Fuelwatch API calls required.
 
-**How does this help us?** Currently we are displaying the fuel data in the Terminal window which isn't particularly easy to view or scroll through the results. This page takes us through the basics of saving that fuel data to a html page. It won't look pretty but shows you the basics. In the next page we will make it look prettier :\)
+**How does this help us?** The code we have written so far can only handle a single call to the Fuelwatch API but what if we want to query more than one fuel type or region at the same time? The Fuelwatch API does not allow you to specify multiple fuel types or regions, so you must call their API once for each combination of data you want. 
 
 ### **1. Modify your python code**
 
@@ -39,9 +39,9 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
-% python fuelwatch_tutorial.py
+(myfuelwatch_venv)% python fuelwatch_tutorial.py
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -49,7 +49,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 # of URLs to process: 2
 ['http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=11&Region=2', 'http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=4&Region=2']
@@ -85,7 +85,7 @@ def gen_fuelwatch_urls(fueltypes, regions):
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-> NOTE: Both the [_**itertools.product**_](python-itertools.product.md) and [_**.format\(\*i\)**_](using-.format.md) are explained in detail in previous sections of this tutorial.
+> NOTE: Both the [_**itertools.product**_](python-itertools.product.md) and [_**.format\(\*i\)**_](python-.format.md) are explained in detail in previous sections of this tutorial.
 
 This is a function which returns a list of Fuelwatch API URLs. 
 

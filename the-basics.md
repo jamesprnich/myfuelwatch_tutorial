@@ -61,7 +61,7 @@ reports_folder
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-> NOTE: The output above will be different. This is example output only.
+> NOTE: The output above will be different on your computer. This is example output only.
 
 * **Create folders on your computer**
 * **Change folders on your computer**
@@ -148,33 +148,89 @@ Now, run the `pwd` command again
 
 You can see how the folder path now includes the `testfolder `folder. 
 
+### What is Python?
+
+Python is a programming language. You will be writing python code in this tutorial. More info is available [here](https://www.python.org/about/).
+
 ### What is the Python Shell?
 
 The Python shell is an interactive interface for writing python code and executing it a line at a time. You will typically use it for learning purposes or perhaps to troubleshoot some code.
 
-The Python shell is started from within the Terminal by typing`python ` at the terminal prompt.
+The Python shell is started from within the Terminal by typing`python` at the terminal prompt.
 
 ### Virtual Environments
 
-Think of this as a little isolated environment within your computer, used just for the app you are about to create
+Think of this as a little isolated area within your computer, used just for the app you are about to create. This allows you to work on many apps or projects without the risk of them interfering with each other. We will create a virtual environment for the myFuelwatch app. More info is available [here](https://virtualenv.pypa.io/en/stable/).
 
 ### PIP
 
-What is PIP?
+Pip is a tool for installing and managing Python packages. We will use pip to install some of the additional software we need when working through this tutorial. More info is available [here](https://pip.pypa.io/en/stable/user_guide/). 
 
 ### API
 
-API stands for Application Programming Interface. 
+API stands for Application Programming Interface. We will be using the Fuelwatch API to get information about fuel prices. The API provides a standard, programmable way to access information. More info is available [here](https://www.mulesoft.com/resources/api/what-is-an-api).
 
 ### XML
 
-What is XML?
+XML stands for Extensible Markup Language. In this tutorial, the fuel data provided by Fuelwatch is in XML format. Think of it like a file, with standardised formatting that contains information. The standard formatting allows a computer program to read information out of the file. The example XML file shown below is what was returned by the Fuelwatch API.
+
+{% code-tabs %}
+{% code-tabs-item title="Example XML" %}
+```markup
+<rss version="2.0">
+    <channel>
+        <title>FuelWatch Prices For Cloverdale</title>
+        <ttl>720</ttl>
+        <link>http://www.fuelwatch.wa.gov.au</link>
+        <description>09/04/2018 - Cloverdale</description>
+        <language>en-us</language>
+        <copyright>Copyright 2005 FuelWatch. All Rights Reserved.</copyright>
+        <lastBuildDate>
+            Mon Apr 09 12:45:04 WST 2018Mon Apr 09 12:45:04 WST 2018
+        </lastBuildDate>
+        <image>
+            <url>/fuelwatch/art/fuelwatch-logo.gif</url>
+            <title>FuelWatch</title>
+            <link>http://www.fuelwatch.wa.gov.au</link>
+        </image>
+        <item>
+            <title>129.9: Coles Express Cloverdale</title>
+            <description>
+                Address: 223 Belmont Ave (Cnr Wright St), CLOVERDALE, Phone: (08) 9277 1660
+            </description>
+            <brand>Coles Express</brand>
+            <date>2018-04-09</date>
+            <price>129.9</price>
+            <trading-name>Coles Express Cloverdale</trading-name>
+            <location>CLOVERDALE</location>
+            <address>223 Belmont Ave (Cnr Wright St)</address>
+            <phone>(08) 9277 1660</phone>
+            <latitude>-31.965057</latitude>
+            <longitude>115.933164</longitude>
+            <site-features>,</site-features>
+        </item>
+    </channel>
+</rss>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Source Code
 
-What is Source code...?
+When we say source code we are referring to the code you as the developer writes. A simple example of source code is show below.
+
+{% code-tabs %}
+{% code-tabs-item title="Example Source Code" %}
+```python
+print("hello world")
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Brew
 
-Homebrew is a free and open-source software package management system that makes it easy to install software on macOS. [https://brew.sh/](https://brew.sh/)
+Homebrew is a free and open-source software package management system that makes it easy to install software on macOS. You use the Terminal to run brew commands. More info is available [here](https://brew.sh/).
+
+**Next Up:   
+**Setting up your computer for coding
 

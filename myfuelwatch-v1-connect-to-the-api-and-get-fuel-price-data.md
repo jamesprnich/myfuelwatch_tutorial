@@ -6,9 +6,13 @@ In this section we add the following functionality:
 * get the returned fuel data
 * print the fuel data 
 
-**How does this help us?** It gets us the fuel data we need, which is the foundation of our product.
+**How does this help us?** It gets us the fuel data we want, which is the foundation of our app.
 
-### **1. Modify your python code**
+### **1. Create a python file & write some python code**
+
+Because we haven't yet written any code we have to first create a file called `fuelwatch_tutorial.py` 
+
+Now enter the code shown below.
 
 {% code-tabs %}
 {% code-tabs-item title="fuelwatch\_tutorial.py" %}
@@ -25,28 +29,11 @@ print(fuelprice_data.content)
 
 ### 2. Install the `requests` module using PIP
 
-* Load a terminal window and activate the myFuelwatch virtual environment.
-
-{% code-tabs %}
-{% code-tabs-item title="Terminal" %}
-```text
-% source bin/activate
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-{% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
-```text
-(myfuelwatch_venv)% 
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
+* Load a terminal window and [activate](myfuelwatch-virtual-environment.md#2.-activate-the-virtualenv) the myFuelwatch virtual environment \(or continue in the same Terminal window if you already have it open from the previous step\)
 * Install requests using PIP
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
 (myfuelwatch_venv)% pip install requests
 ```
@@ -54,7 +41,7 @@ print(fuelprice_data.content)
 {% endcode-tabs %}
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 Collecting requests
   Using cached requests-2.18.4-py2.py3-none-any.whl
@@ -79,9 +66,9 @@ Now we are ready to execute the code and see what happens.
  Run your python code by typing the following command into your terminal window.
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal" %}
+{% code-tabs-item title="Terminal \[virtual env activated\]" %}
 ```text
-% python fuelwatch_tutorial.py
+(myfuelwatch_venv)% python fuelwatch_tutorial.py
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -89,7 +76,7 @@ Now we are ready to execute the code and see what happens.
 Output/result:
 
 {% code-tabs %}
-{% code-tabs-item title="Terminal \(output\)" %}
+{% code-tabs-item title="Terminal \[virtual env activated\] \(output\)" %}
 ```text
 b'<?xml version="1.0" encoding="UTF-8"?>\r\n<rss version="2.0"><channel><title>FuelWatch Prices For Cloverdale</title><ttl>720</ttl><link>http://www.fuelwatch.wa.gov.au</link><description>27/03/2018 - Cloverdale</description><language>en-us</language><copyright>Copyright 2005 FuelWatch. All Rights Reserved.</copyright><lastBuildDate>Tue Mar 27 15:40:57 WST 2018Tu
 ```
@@ -102,7 +89,7 @@ You can see above an small part of what was returned. This contains the fuel pri
 
 1. Import the `requests` module so we can use it to connect to the Fuelwatch API
 2. Specify the URL we want to use for the Fuelwatch API and assign it to a variable `api_url = "http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=1&Suburb=Cloverdale"`
-3. Get the fuel price data from the Fuelwatch API: `fuelprice_data = requests.get(api_url)`
+3. Get the fuel price data returned from the Fuelwatch API: `fuelprice_data = requests.get(api_url)`
 4. Print the data returned by the Fuelwatch API:`print(fuelprice_data.content)`
 
 **Next Up:   

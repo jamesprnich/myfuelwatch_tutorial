@@ -6,7 +6,7 @@
 
 ### Fuelwatch API
 
-Fuelwatch provide documentation on how to use their API [here](https://www.fuelwatch.wa.gov.au/fuelwatch/pages/public/contentholder.jspx?key=fuelwatchRSS.html). The Fuelwatch API returns data in [XML](untitled-1.md#xml) format.
+Fuelwatch provide documentation on how to use their API [here](https://www.fuelwatch.wa.gov.au/fuelwatch/pages/public/contentholder.jspx?key=fuelwatchRSS.html). The Fuelwatch API returns data in [XML](the-basics.md#xml) format.
 
 ### Fuelwatch API example result
 
@@ -54,4 +54,7 @@ API url: [http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=1&Suburb
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+**Next Up:   
+**Create a virtual environment for you to develop and run your code in.
 
