@@ -37,6 +37,9 @@ def get_fueldata(fueltypes, regions, dates):
 
         root = objectify.fromstring(fuelprice_data.content)
 
+        fueltype_name = fueltypes_ref_dict.get(each_url[1])
+        print(fueltype_name)
+
         if hasattr(root.channel, 'item'):
             for each_item in root.channel.item:
 
@@ -47,7 +50,7 @@ def get_fueldata(fueltypes, regions, dates):
                     'Phone': each_item.phone.text,
                     'Brand': each_item.brand.text,
                     'Date': each_item.date.text,
-                    'Fueltype': each_url[1]
+                    'Fueltype': fueltype_name
                 }
 
                 list_of_dicts.append(dict_data)
@@ -59,6 +62,16 @@ def get_fueldata(fueltypes, regions, dates):
 fueltypes = [11, 4, 5, ]  # 11 = Brand Diesel
 regions = [2, ]  # 2 = Broome
 dates = ['18/04/2018', '19/04/2018']
+
+fueltypes_ref_dict = {'1': 'Unleaded Petrol', '2': 'Premium Petrol', '4': 'Diesel'}
+
+# 1 - Unleaded Petrol
+# 2 - Premium Unleaded
+# 4 - Diesel
+# 5 - LPG
+# 6 - 98 RON
+# 10 - E85
+# 11 - Brand diesel
 
 # Call the function to get fuel data
 list_of_dicts = get_fueldata(fueltypes, regions, dates)
