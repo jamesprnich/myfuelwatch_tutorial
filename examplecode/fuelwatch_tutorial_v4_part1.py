@@ -15,13 +15,14 @@ def gen_fuelwatch_urls(fueltypes, regions, dates):
     # print("# of URLs to process: " + str(len(fuelwatch_urls)))
     # return fuelwatch_urls
 
-    fuelwatch_urls = [
-        "http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product={}&Region={}&Day={}".format(*i)
+    fuelwatch_urls_list = [
+        ("http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product={}&Region={}&Day={}".format(*i), i[0])
         for i in itertools.product(fueltypes, regions, dates)
     ]
 
-    print("# of URLs to process: " + str(len(fuelwatch_urls)))
-    return fuelwatch_urls  # [('url',1),('url2',2)]
+    print("# of URLs to process: " + str(len(fuelwatch_urls_list)))
+    print("urls as tuple: " + str(fuelwatch_urls_list))
+    return fuelwatch_urls_list  # [('url',1),('url2',2)]
 
 
 def get_fueldata(fueltypes, regions, dates):
@@ -31,8 +32,8 @@ def get_fueldata(fueltypes, regions, dates):
     list_of_dicts = []
 
     for each_url in fuelwatch_urls:
-        print(each_url)
-        fuelprice_data = requests.get(each_url)
+        print(each_url[0])
+        fuelprice_data = requests.get(each_url[0])
 
         root = objectify.fromstring(fuelprice_data.content)
 
@@ -56,7 +57,7 @@ def get_fueldata(fueltypes, regions, dates):
 # Fuelwatch API codes are located here: https://www.fuelwatch.wa.gov.au/fuelwatch/pages/public/contentholder.jspx?key=fuelwatchRSS.html
 fueltypes = [11, 4, 5, ]  # 11 = Brand Diesel
 regions = [2, ]  # 2 = Broome
-dates = ['04/04/2018', '05/04/2018']
+dates = ['18/04/2018', '19/04/2018']
 
 # Call the function to get fuel data
 list_of_dicts = get_fueldata(fueltypes, regions, dates)
