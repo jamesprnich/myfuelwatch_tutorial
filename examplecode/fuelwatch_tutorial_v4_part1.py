@@ -46,7 +46,8 @@ def get_fueldata(fueltypes, regions, dates):
                     'Address': each_item.address.text,
                     'Phone': each_item.phone.text,
                     'Brand': each_item.brand.text,
-                    'Date': each_item.date.text
+                    'Date': each_item.date.text,
+                    'Fueltype': each_url[1]
                 }
 
                 list_of_dicts.append(dict_data)
@@ -79,7 +80,7 @@ for each_row in list_of_dicts_sorted:
     else:
         css_class = ''
 
-    table_row = "<tr class='" + css_class + "'><td>{Price}</td><td>{Location}</td><td>{Address}</td><td>{Phone}</td><td>{Brand}</td><td>{Date}</td></tr>".format(**each_row)
+    table_row = "<tr class='" + css_class + "'><td>{Price}</td><td>{Location}</td><td>{Address}</td><td>{Phone}</td><td>{Brand}</td><td>{Date}</td><td>{Fueltype}</td></tr>".format(**each_row)
     table_content = table_content + table_row
 
 # Create contents of html page
@@ -101,6 +102,7 @@ html_content = """<html>
                                  <th>Phone</th>
                                  <th>Brand</th>
                                  <th>Date</th>
+                                 <th>FuelType</th>
                                </tr>
                          </thead>
                         <tbody>
